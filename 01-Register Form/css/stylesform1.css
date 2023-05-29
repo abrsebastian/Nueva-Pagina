@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+:root{
+    --border-color: linear-gradient(
+        to right,
+        #9A48D0 0%,
+        #E4B7E5 100%       
+    );
+    --background-color: rgb(199, 194, 194); 
+    --background-absolute: linear-gradient(
+        to right,
+        #4b1171 0%,
+        #7418b0 25%,
+        #9920ea 50%,
+        #4b1171 100%
+    ); 
+} 
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background-absolute);
+}
+
+::placeholder {color:#E4B7E5}
+
+h1{
+    margin:0;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom:40px;
+}
+
+.container{
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+    width: 400px;
+    background: #B288C0;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.border{
+    background:var(--border-color);
+    box-shadow: 0 0 20px 0 black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.btn{
+    height: 40px;
+    width: 40px;
+    background:var(--border-color);
+    border-radius: 4px; 
+    border: none;
+    box-shadow: 0 0 5px 0 #000000;
+    cursor: pointer;
+    transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.separator{
+    display: flex;
+    width: 100%;
+    gap: 2px;
+}
+
+.separator span picture img {
+
+    width: 10px;
+} 
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.r-buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-self: center;
+    width: 100%;
+}
+
+.btn:hover{
+    background: #4b1171;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.photos {
+    width: 95%;
+}
+
+.loguitos{
+    height: 35px;
+    width: 35px;
+}
+
+.checkbox-label{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.checkbox-label input{
+    width: 15px;
+}
+
+.check{
+    display: flex;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label input{
+    width: 100%;
+    background-color: #63458A;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #63458A;
+    font-size: medium;
+    display: flex;
+    align-self: center;
+    outline: none;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:focus{
+    background-color: rgb(252, 228, 245);
+    border: solid 1px violet;
+    box-shadow: 0 0 15px 0 violet;
+}
+
+label input:hover{
+    background-color: rgb(252, 228, 245);
+    border: solid 1px violet;
+    box-shadow: 0 0 15px 0 violet;
+}
+
+label input:focus::placeholder{
+    color:rgb(252, 228, 245);
+}
+
+label span{
+    font-size: 700;
+}
+
+.section-inputs{
+    display: flex;
+    flex-direction:row;
+    gap: 15px;
+    width: 100%;
+}
+
+.section-inputs input{
+    display: flex;
+    width: 100%;
+}
+
+.password{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+.btn-submit{
+    padding: 5px;
+    border-radius: 5px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background:#9920ed;
+    transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+p{
+    margin: 0;
+    padding: 5px;
+    color:white
+}
+
+.btn-submit:hover{
+    background: #4b1171;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.create-account{
+    display: flex;
+    justify-content: center;
+}
+
+

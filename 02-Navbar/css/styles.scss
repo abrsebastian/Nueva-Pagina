@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+:root{
+    --border-color: linear-gradient(
+        to right,
+        #9A48D0 0%,
+        #E4B7E5 100%       
+    );
+    --background-color: rgb(199, 194, 194); 
+    --background-absolute: linear-gradient(
+        to right,
+        #4b1171 0%,
+        #7418b0 25%,
+        #9920ea 50%,
+        #4b1171 100%
+    ); 
+    --inputs: #63458A;
+    --placeholder: #E4B7E5;
+    --header:#B288C0;
+} 
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: solid 2px black;
+    background: var(--background-absolute);
+}
+
+.logo{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    .inicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border:none;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+::placeholder{
+    color:var(--placeholder);
+    text-align: left
+}
+
+.browse-bar{
+    display: flex;
+    height: 30px;
+    align-self: center;
+    
+    .input-1{
+        display: flex;
+        border-radius: 50px 0 0 50px;
+        width: 220px;
+        border:solid 1px;
+        background-color: var(--inputs);
+        padding:0 6px 0 15px;
+    }
+    .bbtn{
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        
+        .browser{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 50px 50px 0;
+        height: 30px;
+        background-color: var(--inputs);
+        border:solid 1px;
+        
+        img{
+            width: 50%;
+        }
+    }
+    }
+}
+
+.account{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 40px;
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid orange;
+        /*background: var(--border-color);*/
+        background-color: rgb(255, 219, 151);
+        width: 40px;
+        height: 40px;
+        :hover{
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        img{
+            width: 80%;
+            :hover{
+                width: 5%;
+            }
+        }
+    }
+}
