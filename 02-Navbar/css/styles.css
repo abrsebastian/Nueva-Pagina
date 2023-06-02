@@ -16,12 +16,22 @@
   --inputs: #63458A;
   --placeholder: #E4B7E5;
   --header:#B288C0;
+  --orange: linear-gradient(
+      to right,
+      orange 0%,
+      tomato 50%,
+      orangered 100%
+  ) ;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #43c6ac, #191654);
 }
 
 header {
@@ -31,7 +41,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   border-bottom: solid 2px black;
-  background: var(--background-absolute);
+  background: wheat;
 }
 
 .logo {
@@ -67,13 +77,15 @@ header {
   display: flex;
   height: 30px;
   align-self: center;
+  justify-content: center;
+  width: 600px;
 }
 .browse-bar .input-1 {
   display: flex;
   border-radius: 50px 0 0 50px;
   width: 220px;
-  border: solid 1px;
-  background-color: var(--inputs);
+  border: solid 1px var(--inputs);
+  background-color: white;
   padding: 0 6px 0 15px;
 }
 .browse-bar .bbtn {
@@ -85,41 +97,62 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 5px 5px 0;
   height: 30px;
-  background-color: var(--inputs);
-  border: solid 1px;
+  background-color: white;
+  border: solid 1px var(--inputs);
 }
-.browse-bar .bbtn .browser img {
+.browse-bar .bbtn .browser .lupita {
   width: 50%;
 }
-
-.account {
-  display: flex;
-  justify-content: space-around;
-  width: 200px;
-  height: 40px;
-}
-.account .btn {
+.browse-bar .bbtn .upload {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  border: 2px solid orange;
-  /*background: var(--border-color);*/
-  background-color: rgb(255, 219, 151);
-  width: 40px;
-  height: 40px;
+  font-size: medium;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  background: var(--orange);
 }
-.account .btn :hover {
-  background-color: green;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.browse-bar .bbtn .upload .camarita {
+  width: 20%;
+  padding: 0 0 0 10px;
 }
-.account .btn img {
-  width: 80%;
+.browse-bar .bbtn .upload .text-upload {
+  color: var(--background-absolute);
 }
-.account .btn img :hover {
-  width: 5%;
+.browse-bar .bbtn .refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.browse-bar .bbtn .refresh .text-refresh {
+  display: flex;
+  padding: 0 10px 0 10px;
+}
+
+.bloque {
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.bloque nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloque .botonera {
+  padding-top: 5px;
+}
+.bloque .botonera ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
 }/*# sourceMappingURL=styles.css.map */
